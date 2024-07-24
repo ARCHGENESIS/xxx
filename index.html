@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AR.js Three.js Example - Wall Marker</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/aframe-gif-shader@latest/dist/aframe-gif-shader.min.js"></script>
+</head>
+<body style="margin: 0;">
+  <a-scene embedded arjs>
+    <a-marker preset="custom" type="pattern" url="xxxfix.patt">
+      <!-- Use gif-shader to display the animated GIF -->
+      <a-entity position="0 0 0" rotation="90 0 0">
+        <a-plane shader="gif" src="xxx.gif" width="3" height="3"></a-plane>
+      </a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
